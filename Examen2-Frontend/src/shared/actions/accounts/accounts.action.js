@@ -1,4 +1,4 @@
-import { journalsApi } from "../../../config/api";  // Usar el endpoint adecuado para las cuentas
+import { journalsApi } from "../../../config/api";
 
 export const getAccountsList = async (searchTerm = "", page = 1) => {
   try {

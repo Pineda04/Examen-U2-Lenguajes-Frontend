@@ -16,7 +16,7 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="bg-blue-600 p-4 shadow-lg rounded-lg">
+    <nav className="bg-blue-600 p-4 shadow-lg">
       <div className="container flex flex-col mx-auto md:flex-row md:items-center md:justify-between">
         <div className="flex items-center justify-between w-full md:w-auto">
           <Link to="/" className="text-xl font-bold text-white">
@@ -57,7 +57,7 @@ export const Navbar = () => {
             Logs
           </Link>
           <Link
-            to="/ver-partidas"
+            to="/journals"
             className="my-1 text-white hover:text-gray-300 md:my-0"
           >
             Ver partidas contables

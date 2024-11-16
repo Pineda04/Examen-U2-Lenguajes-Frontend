@@ -7,3 +7,8 @@ export * from './Footer'
 export * from './AccountsPostList'
 export * from './AccountListItem'
 export * from './AccountListSkeleton'
+
+// Partidas
+export * from './JournalsPostList'
+export * from './JournalListItem'
+export * from './JournalListSkeleton'

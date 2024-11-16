@@ -1,6 +1,4 @@
-import { generateId } from "../../../shared/utils";
-
-export const AccountItemSkeleton = () => {
+export const JournalItemSkeleton = () => {
   return (
     <tr className="bg-gray-700 animate-pulse">
       <td className="px-6 py-4">
@@ -8,9 +6,6 @@ export const AccountItemSkeleton = () => {
       </td>
       <td className="px-6 py-4">
         <div className="h-4 bg-gray-600 rounded w-3/4"></div>
-      </td>
-      <td className="px-6 py-4">
-        <div className="h-4 bg-gray-600 rounded w-2/3"></div>
       </td>
       <td className="px-6 py-4">
         <div className="h-4 bg-gray-600 rounded w-1/3"></div>
@@ -22,21 +17,21 @@ export const AccountItemSkeleton = () => {
   );
 };
 
-export const AccountListSkeleton = ({ size = 2 }) => {
+export const JournalListSkeleton = ({ size = 2 }) => {
   return (
     <div className="overflow-x-auto rounded-xl shadow-xl mt-8">
       <table className="min-w-full bg-white rounded-lg">
         <thead className="bg-gradient-to-r from-blue-500 to-blue-700 text-white">
           <tr>
-            <th className="px-6 py-4 text-left text-sm font-medium">Código</th>
-            <th className="px-6 py-4 text-left text-sm font-medium">Nombre</th>
-            <th className="px-6 py-4 text-left text-sm font-medium">Tipo de Cuenta</th>
-            <th className="px-6 py-4 text-left text-sm font-medium">Permitir Movimiento</th>
+            <th className="px-6 py-4 text-left text-sm font-medium">Número de Partida</th>
+            <th className="px-6 py-4 text-left text-sm font-medium">Descripción</th>
+            <th className="px-6 py-4 text-left text-sm font-medium">Fecha</th>
+            <th className="px-6 py-4 text-left text-sm font-medium">Acciones</th>
           </tr>
         </thead>
         <tbody>
-          {[...Array(size)].map(() => (
-            <AccountItemSkeleton key={generateId()} />
+          {[...Array(size)].map((_, index) => (
+            <JournalItemSkeleton key={index} />
           ))}
         </tbody>
       </table>

@@ -14,7 +14,7 @@ export const Pagination = ({
       <button
         onClick={handlePreviousPage}
         disabled={!hasPreviousPage}
-        className={`px-3 py-2 mx-1 font-bold bg-yellow-500 text-white rounded-md ${!hasPreviousPage ? "cursor-not-allowed" : "hover:bg-yellow-400"}`}
+        className={`px-3 py-2 mx-1 font-bold bg-yellow-500 text-black rounded-md ${!hasPreviousPage ? "cursor-not-allowed" : "hover:bg-yellow-400"}`}
       >
         Anterior
       </button>
@@ -22,7 +22,7 @@ export const Pagination = ({
         <button
           key={generateId()}
           onClick={() => handleCurrentPage(index + 1)}
-          className={`px-3 py-2 mx-1 font-medium rounded-md text-gray-700 ${currentPage === index + 1 ? "bg-unah-blue text-white" : "hover:bg-unah-blue hover:text-white"}`}
+          className={`px-3 py-2 mx-1 font-medium rounded-md text-black ${currentPage === index + 1 ? "bg-unah-blue text-black" : "hover:bg-unah-blue hover:text-white"}`}
         >
           {index + 1}
         </button>
@@ -30,7 +30,7 @@ export const Pagination = ({
       <button
         onClick={handleNextPage}
         disabled={!hasNextPage}
-        className={`px-3 py-2 mx-1 font-bold bg-yellow-500 text-white rounded-md ${!hasNextPage ? "cursor-not-allowed" : "hover:bg-yellow-400"}`}
+        className={`px-3 py-2 mx-1 font-bold bg-yellow-500 text-black rounded-md ${!hasNextPage ? "cursor-not-allowed" : "hover:bg-yellow-400"}`}
       >
         Siguiente
       </button>
